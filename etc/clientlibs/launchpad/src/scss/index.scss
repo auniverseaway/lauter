@@ -25,7 +25,6 @@ body {
     margin: 0;
     font-family: 'Open Sans', Helvetica, Arial;
     font-weight: 300;
-    line-height: 2em;
     color: rgb(128,128,128);
     position: relative;
 }
@@ -36,6 +35,18 @@ header {
     img {
         height: 68px;
     }
+
+    .Header-Grid {
+        text-align: center;
+
+        @media (min-width: 34em) {
+            text-align: initial;
+        }
+    }
+}
+
+a {
+    color: #dd1683;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -62,6 +73,15 @@ section {
     border-bottom: 1px solid #C3C3C3;
     padding: 4.5em 0;
 
+    .Copy-Grid {
+        margin: 0 1em;
+        line-height: 2em;
+
+        @media (min-width: 34em) {
+            margin: 0;
+        }
+    }
+
     h2 {
         font-size: 2.5em;
     }
@@ -81,10 +101,18 @@ section {
     margin: 0 auto;
 }
 
-.responsive-list li b{
-    display: inline-block;
-    min-width: 100px;
-    font-weight: 400;
+.responsive-list {
+
+    li b {
+        display: inline-block;
+        min-width: 80px;
+        font-weight: 400;
+    }
+
+    li .size-range {
+        display: inline-block;
+        min-width: 80px;
+    }
 }
 
 .background-light-gray {

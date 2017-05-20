@@ -28,7 +28,7 @@
         <div class="gradient"></div>
         <header>
             <div class="container">
-                <div class="Grid Fit-Small Align-Center">
+                <div class="Grid Fit-Small Align-Center Header-Grid">
                     <div class="Cell Medium-15">
                         <img src="etc/clientlibs/launchpad/dist/img/lauter-logo.svg"/>
                     </div>
@@ -36,7 +36,7 @@
                         <h2>grid system</h2>
                     </div>
                     <div class="Cell Medium-15">
-                        <a href="http://github.com">View on Github</a>
+                        <a href="https://github.com/auniverseaway/lauter">View on Github</a>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
         <div class="content">
             <div class="container">
             <section>
-                <div class="Grid Fit-Medium Align-Center">
+                <div class="Grid Fit-Medium Align-Center Copy-Grid">
                     <div class="Cell Medium-30">
                         <h2>Introduction</h2>
                         <p>Lauter is a lightweight grid system.<br/> It's designed with the following tenets:</p>
@@ -57,7 +57,6 @@
                             <li>Lightweight</li>
                             <li>Based on Flexbox</li>
                             <li>All cells add up to 100%</li>
-                            <li>Familiar to users of Bootstrap</li>
                             <li>Support near-arbitrary column widths</li>
                             <li>Support vertical centering</li>
                         </ul>
@@ -65,7 +64,7 @@
                 </div>
             </section>
             <section>
-                <div class="Grid Fit-Medium Align-Center">
+                <div class="Grid Fit-Medium Align-Center Copy-Grid">
                     <div class="Cell Medium-30">
                         <h2>Breakpoints</h2>
                         <p>Lauter matches common responsive breakpoints.</p>
@@ -74,17 +73,17 @@
                     </div>
                     <div class="Cell">
                         <ul class="responsive-list">
-                            <li><b>Mobile</b> 0-543px</li>
-                            <li><b>Small</b> 544-767px</li>
-                            <li><b>Medium</b> 768-991px</li>
-                            <li><b>Large</b> 992-1999px</li>
-                            <li><b>Extra</b> 1200px +</li>
+                            <li><b>Mobile</b> <span class="size-range">0-543</span> PX</li>
+                            <li><b>Small</b> <span class="size-range">544-767</span> PX</li>
+                            <li><b>Medium</b> <span class="size-range">768-991</span> PX</li>
+                            <li><b>Large</b> <span class="size-range">992-1199</span> PX</li>
+                            <li><b>Extra</b> <span class="size-range">1200</span> PX+</li>
                         </ul>
                     </div>
                 </div>
             </section>
             <section>
-                <h2>Basic Usage</h2>
+                <h2>Usage</h2>
                 <p>A grid is composed of at least one <code>Grid</code> and one <code>Cell</code>.</p>
                 <div class="Grid">
                     <div class="Cell background-light-gray">I am a Cell inside a Grid.</div>
@@ -117,48 +116,33 @@
                 </div>
             </section>
             <section>
-                <h2>Add Gutters</h2>
-                <h3>Horizontal Gutters</h3>
-                <p>If you are fitting your cells, you can add a <code>Gutter</code> between your <code>Cell</code> elements.</p>
-                <div class="Grid Fit-Medium Gutter">
-                    <div class="Cell background-light-gray">I am a Cell.</div>
-                    <div class="Cell background-medium-gray">I am a Cell.</div>
-                    <div class="Cell background-light-gray">I am a Cell.</div>
-                    <div class="Cell background-medium-gray">I am a Cell.</div>
-                    <div class="Cell background-light-gray">I am a Cell.</div>
-                    <div class="Cell background-medium-gray">I am a Cell.</div>
-                </div>
-                <h3>Vertical Gutters</h3>
-                <p>A gutter is created on every <code>Grid</code> element.</p>
-                <div class="Grid Fit-Medium Gutter">
-                    <div class="Cell background-light-gray">I am a Cell.</div>
-                    <div class="Cell background-medium-gray">I am a Cell.</div>
-                    <div class="Cell background-light-gray">I am a Cell.</div>
-                    <div class="Cell background-medium-gray">I am a Cell.</div>
-                    <div class="Cell background-light-gray">I am a Cell.</div>
-                    <div class="Cell background-medium-gray">I am a Cell.</div>
-                </div>
-                <div class="Grid Fit-Medium Gutter">
-                    <div class="Cell background-light-gray">I am a Cell.</div>
-                    <div class="Cell background-medium-gray">I am a Cell.</div>
-                    <div class="Cell background-light-gray">I am a Cell.</div>
-                    <div class="Cell background-medium-gray">I am a Cell.</div>
-                    <div class="Cell background-light-gray">I am a Cell.</div>
-                    <div class="Cell background-medium-gray">I am a Cell.</div>
-                </div>
-                <p>If you have <code>Fit</code> the <code>Grid</code>, bellow the fit breakpoint, the vertical gutter will be placed on the <code>Cell</code>. This will show a vertical gutter below the <code>Large</code> viewport.
-                <div class="Grid Fit-Large Gutter">
-                    <div class="Cell background-light-gray">I am a Cell.</div>
-                    <div class="Cell background-medium-gray">I am a Cell.</div>
-                    <div class="Cell background-light-gray">I am a Cell.</div>
-                    <div class="Cell background-medium-gray">I am a Cell.</div>
-                    <div class="Cell background-light-gray">I am a Cell.</div>
-                    <div class="Cell background-medium-gray">I am a Cell.</div>
+                <h2>Add Padding</h2>
+                <p>You can add basic padding to each <code>Cell</code> by using <code>Pad</code>.</p>
+                <div class="Grid Fit-Medium">
+                    <div class="Cell Pad background-light-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-medium-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-light-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-medium-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-light-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-medium-gray">I am a Cell.</div>
                 </div>
             </section>
             <section>
-                <h2>Add Padding</h2>
-                <p>You can add basic padding to each <code>Cell</code> by using <code>Pad</code>.</p>
+                <div class="Copy-Grid">
+                    <h2>Add Gutters</h2>
+                    <h3>Horizontal Gutters</h3>
+                    <p>If you are fitting your cells, you can add a <code>Gutter</code> between your <code>Cell</code> elements.</p>
+                </div>
+                <div class="Grid Fit-Medium Gutter">
+                    <div class="Cell Pad background-light-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-medium-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-light-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-medium-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-light-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-medium-gray">I am a Cell.</div>
+                </div>
+                <h3>Vertical Gutters</h3>
+                <p>If <code>Gutter</code> is used, each <code>Grid</code> element will have a Gutter added to the bottom.</p>
                 <div class="Grid Fit-Medium Gutter">
                     <div class="Cell Pad background-light-gray">I am a Cell.</div>
                     <div class="Cell Pad background-medium-gray">I am a Cell.</div>
@@ -168,6 +152,15 @@
                     <div class="Cell Pad background-medium-gray">I am a Cell.</div>
                 </div>
                 <div class="Grid Fit-Medium Gutter">
+                    <div class="Cell Pad background-light-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-medium-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-light-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-medium-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-light-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-medium-gray">I am a Cell.</div>
+                </div>
+                <p>If you have <code>Fit</code> the <code>Grid</code>, bellow the fit breakpoint, the vertical gutter will be placed on the <code>Cell</code>. This will show a vertical gutter below the <code>Large</code> viewport.
+                <div class="Grid Fit-Large Gutter">
                     <div class="Cell Pad background-light-gray">I am a Cell.</div>
                     <div class="Cell Pad background-medium-gray">I am a Cell.</div>
                     <div class="Cell Pad background-light-gray">I am a Cell.</div>
