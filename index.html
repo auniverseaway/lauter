@@ -29,10 +29,8 @@
         <header>
             <div class="container">
                 <div class="Grid Fit-Small Align-Center Header-Grid">
-                    <div class="Cell Medium-15">
+                    <div class="Cell Logo">
                         <img src="etc/clientlibs/launchpad/dist/img/lauter-logo.svg"/>
-                    </div>
-                    <div class="Cell">
                         <h2>grid system</h2>
                     </div>
                     <div class="Cell Medium-15">
@@ -44,7 +42,7 @@
         <div class="content">
             <div class="container">
             <section>
-                <div class="Grid Fit-Medium Align-Center Copy-Grid">
+                <div class="Grid Fit-Medium Align-Center Copy">
                     <div class="Cell Medium-30">
                         <h2>Introduction</h2>
                         <p>Lauter is a lightweight grid system.<br/> It's designed with the following tenets:</p>
@@ -56,7 +54,7 @@
                             <li>Responsive</li>
                             <li>Lightweight</li>
                             <li>Based on Flexbox</li>
-                            <li>All cells add up to 100%</li>
+                            <li>All cells add up to 100% (or not)</li>
                             <li>Support near-arbitrary column widths</li>
                             <li>Support vertical centering</li>
                         </ul>
@@ -64,7 +62,7 @@
                 </div>
             </section>
             <section>
-                <div class="Grid Fit-Medium Align-Center Copy-Grid">
+                <div class="Grid Fit-Medium Align-Center Copy">
                     <div class="Cell Medium-30">
                         <h2>Breakpoints</h2>
                         <p>Lauter matches common responsive breakpoints.</p>
@@ -83,16 +81,20 @@
                 </div>
             </section>
             <section>
-                <h2>Usage</h2>
-                <p>A grid is composed of at least one <code>Grid</code> and one <code>Cell</code>.</p>
+                <div class="Copy">
+                    <h2>Usage</h2>
+                    <p>A grid is composed of at least one <code>Grid</code> and one <code>Cell</code>.</p>
+                </div>
                 <div class="Grid">
                     <div class="Cell background-light-gray">I am a Cell inside a Grid.</div>
                 </div>
             </section>
             <section>
-                <h2>Multiple Columns</h2>
-                <h3>Basic Example</h3>
-                <p>You can support multiple columns using one <code>Grid</code> element and two <code>Cell</code> elements.</p>
+                <div class="Copy">
+                    <h2>Multiple Columns</h2>
+                    <h3>Basic Example</h3>
+                    <p>You can support multiple columns using one <code>Grid</code> element and two <code>Cell</code> elements.</p>
+                </div>
                 <div class="Grid">
                     <div class="Cell background-light-gray">I am a Cell inside a Grid.</div>
                     <div class="Cell background-medium-gray">I am a Cell inside a Grid.</div>
@@ -116,8 +118,10 @@
                 </div>
             </section>
             <section>
-                <h2>Add Padding</h2>
-                <p>You can add basic padding to each <code>Cell</code> by using <code>Pad</code>.</p>
+                <div class="Copy">
+                    <h2>Add Padding</h2>
+                    <p>You can add padding to each <code>Cell</code> by using <code>Pad</code>.</p>
+                </div>
                 <div class="Grid Fit-Medium">
                     <div class="Cell Pad background-light-gray">I am a Cell.</div>
                     <div class="Cell Pad background-medium-gray">I am a Cell.</div>
@@ -128,7 +132,7 @@
                 </div>
             </section>
             <section>
-                <div class="Copy-Grid">
+                <div class="Copy">
                     <h2>Add Gutters</h2>
                     <h3>Horizontal Gutters</h3>
                     <p>If you are fitting your cells, you can add a <code>Gutter</code> between your <code>Cell</code> elements.</p>
@@ -141,15 +145,9 @@
                     <div class="Cell Pad background-light-gray">I am a Cell.</div>
                     <div class="Cell Pad background-medium-gray">I am a Cell.</div>
                 </div>
-                <h3>Vertical Gutters</h3>
-                <p>If <code>Gutter</code> is used, each <code>Grid</code> element will have a Gutter added to the bottom.</p>
-                <div class="Grid Fit-Medium Gutter">
-                    <div class="Cell Pad background-light-gray">I am a Cell.</div>
-                    <div class="Cell Pad background-medium-gray">I am a Cell.</div>
-                    <div class="Cell Pad background-light-gray">I am a Cell.</div>
-                    <div class="Cell Pad background-medium-gray">I am a Cell.</div>
-                    <div class="Cell Pad background-light-gray">I am a Cell.</div>
-                    <div class="Cell Pad background-medium-gray">I am a Cell.</div>
+                <div class="Copy">
+                    <h3>Vertical Gutters</h3>
+                    <p>If <code>Gutter</code> is used, each <code>Grid</code> element will have a Gutter added to the bottom.</p>
                 </div>
                 <div class="Grid Fit-Medium Gutter">
                     <div class="Cell Pad background-light-gray">I am a Cell.</div>
@@ -159,7 +157,18 @@
                     <div class="Cell Pad background-light-gray">I am a Cell.</div>
                     <div class="Cell Pad background-medium-gray">I am a Cell.</div>
                 </div>
-                <p>If you have <code>Fit</code> the <code>Grid</code>, bellow the fit breakpoint, the vertical gutter will be placed on the <code>Cell</code>. This will show a vertical gutter below the <code>Large</code> viewport.
+                <div class="Grid Fit-Medium Gutter">
+                    <div class="Cell Pad background-light-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-medium-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-light-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-medium-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-light-gray">I am a Cell.</div>
+                    <div class="Cell Pad background-medium-gray">I am a Cell.</div>
+                </div>
+                <div class="Copy">
+                    <p>If you have <code>Fit</code> the <code>Grid</code>, bellow the fit breakpoint, the vertical gutter will be 
+                       placed on the <code>Cell</code>. This will show a vertical gutter below the <code>Large</code> viewport.</p>
+                </div>
                 <div class="Grid Fit-Large Gutter">
                     <div class="Cell Pad background-light-gray">I am a Cell.</div>
                     <div class="Cell Pad background-medium-gray">I am a Cell.</div>
@@ -170,9 +179,11 @@
                 </div>
             </section>
             <section>
-                <h2>Cell Heights</h2>
-                <h3>Stretching</h3>
-                <p>By default, a <code>Cell</code> will stretch to the full height of the <code>Grid</code>.</p>
+                <div class="Copy">
+                    <h2>Cell Heights</h2>
+                    <h3>Stretching</h3>
+                    <p>By default, a <code>Cell</code> will stretch to the full height of the <code>Grid</code>.</p>
+                </div>
                 <div class="Grid Fit-Medium Gutter">
                     <div class="Cell Pad background-light-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
@@ -185,9 +196,11 @@
                     <div class="Cell Pad background-light-gray">I am a Cell.</div>
                     <div class="Cell Pad background-medium-gray">I am a Cell.</div>
                 </div>
-                <h3>Vertical Aligning</h3>
-                <p>You can place the contents of a <code>Cell</code> in the middle using <code>Align-Center</code>.</p>
-                <p>You can place the contents of a <code>Cell</code> at the end using <code>Align-Bottom</code>.</p>
+                <div class="Copy">
+                    <h3>Vertical Aligning</h3>
+                    <p>You can place the contents of a <code>Cell</code> in the middle using <code>Align-Center</code>.</p>
+                    <p>You can place the contents of a <code>Cell</code> at the end using <code>Align-Bottom</code>.</p>
+                </div>
                 <div class="Grid Fit-Medium Gutter">
                     <div class="Cell Pad background-light-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
@@ -200,32 +213,44 @@
                 </div>
             </section>
             <section>
-                <h2>Cell Widths</h2>
-                <h3>Basic example</h3>
-                <p>You can declare sizes on a per-viewport basis. Below is a sample that sets the left column to 30% for medium and above viewports. 
-                   Widths are opt-in, you don't have to specify a width for all <code>Cell</code> elements. In this case, the right column does not 
-                   have a width specified. It simply takes up the remainder of the available space.</p>
+                <div class="Copy">
+                    <h2>Cell Widths</h2>
+                    <h3>Overview</h3>
+                    <p>Lauter does not mandate a 12 / 16 / 24 column grid. You can specify <code>Cell</code> widths in 5% increments. 
+                       They can add up to 100%, or you can leave out widths to take up remaining space in the grid. You can also choose 
+                       to not fill the entire area of a grid as shown in the last example.</p>
+                    <h3>Basic example</h3>
+                    <p>You can declare sizes on a per-viewport basis. Below is a sample that sets the left column to 30% for medium and above viewports. 
+                       Widths are opt-in, you don't have to specify a width for all <code>Cell</code> elements. In this case, the right column does not 
+                       have a width specified. It simply takes up the remainder of the available space.</p>
+                </div>
                 <div class="Grid Fit-Medium Gutter">
                     <div class="Cell Pad Medium-30 background-light-gray">I am a Cell that takes up 30% of the width on medium and above devices.</div>
                     <div class="Cell Pad background-medium-gray">I am a Cell that takes up the remainder of the available space.</div>
                 </div>
-                <h3>Different widths for different devices example</h3>
-                <p>You can declare sizes on a per-viewport basis. Below is a</p>
+                <div class="Copy">
+                    <h3>Different widths for different devices example</h3>
+                    <p>You can declare sizes on a per-viewport basis. Below is a sample where the first <code>Cell</code> takes up 50% on a small device, and 30% on a medium device.</p>
+                </div>
                 <div class="Grid Fit-Small Gutter">
                     <div class="Cell Pad Small-50 Medium-30 background-light-gray">I am a Cell that takes up 50% of the width on small devices, but 30% width on medium and above devices.</div>
                     <div class="Cell Pad background-medium-gray">I am a Cell that takes up the remainder of the available space.</div>
                 </div>
-                <h3>Different widths that do not take up all available space</h3>
-                <p>You can declare sizes on a per-viewport basis. Below is a</p>
+                <div class="Copy">
+                    <h3>Different widths that do not take up all available space</h3>
+                    <p>If you declare sizes on all <code>Cell</code> elements, can choose to have them add up to 100% or only take up the desired amount of space.</p>
+                </div>
                 <div class="Grid Fit-Small Gutter">
                     <div class="Cell Pad Small-20 background-light-gray">I am a Cell that takes up 20% of the width on small and above devices.</div>
                     <div class="Cell Pad Small-30 background-medium-gray">I am a Cell that takes up 30% of the width on small and above devices.</div>
                 </div>
             </section>
             <section>
-                <h2>Nesting</h2>
-                <h3>Basic example</h3>
-                <p>Nesting <i>should</i> work as expected. This has not been tested thoroughly.</p>
+                <div class="Copy">
+                    <h2>Nesting</h2>
+                    <h3>Basic example</h3>
+                    <p>Nesting <i>should</i> work as expected. This has not been tested thoroughly.</p>
+                </div>
                 <div class="Grid Fit-Medium Gutter">
                     <div class="Cell Pad Medium-30 background-light-gray">I am a Cell that takes up 30% of the width on medium and above devices.</div>
                     <div class="Cell Pad background-medium-gray">
@@ -234,6 +259,12 @@
                             <div class="Cell Pad background-dark-gray">I am a Cell that takes up the remainder of the available space.</div>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section>
+                <div class="Copy">
+                    <h2>About</h2>
+                    <p>Lauter was built by <a href="https://twitter.com/auniverseaway">Chris Millar</a> in Salt Lake City, Utah. It is licensed under the Apache 2.0 license.</p>
                 </div>
             </section>
             </div>

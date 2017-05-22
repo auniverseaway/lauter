@@ -31,27 +31,42 @@ body {
 
 header {
     padding: 4.5em 0;
+    text-align: center;
 
     img {
         height: 68px;
-    }
-
-    .Header-Grid {
-        text-align: center;
 
         @media (min-width: 34em) {
-            text-align: initial;
+            margin-right: 2em;
+        }
+    }
+
+    @media (min-width: 34em) {
+        text-align: initial;
+    }
+
+
+    .Cell {
+        @media (min-width: 34em) {
+            display: flex;
+            align-items: center;
         }
     }
 }
 
 a {
     color: #dd1683;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     margin: 0;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin: 2em 0 0 0;
 }
 
 ul {
@@ -73,7 +88,7 @@ section {
     border-bottom: 1px solid #C3C3C3;
     padding: 4.5em 0;
 
-    .Copy-Grid {
+    .Copy {
         margin: 0 1em;
         line-height: 2em;
 
@@ -84,6 +99,10 @@ section {
 
     h2 {
         font-size: 2.5em;
+    }
+
+    &:last-of-type {
+        border-bottom: none;
     }
 }
 
